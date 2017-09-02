@@ -1,0 +1,537 @@
+/* ATTENTION! I put most of the CSS that you're most likely to want to tweak in the top 30 lines 
+of this page to make it easier for you. 
+
+You can easily change the color scheme of the whole site just by changing a few value in the first 13 lines of code here. 
+Below that, you can change the font size of the title, which is "Your Name" by default.
+
+This site uses google fonts, so you can easily swap them out if you want.
+I have tried to document a lot of the CSS using comments to make it easier for you to change */
+
+@import url('https://fonts.googleapis.com/css?family=Nova+Square');
+
+/* Change the fonts for the title and h2 elements under here */
+.title, h2{
+	font-family: 'Nova Square', sans-serif;
+}
+
+/* Change your color scheme under here */
+.overlay {
+    background: rgba(0, 80, 255, 0.6); /*BG color could be anything, of course*/
+    padding-top: 20px;
+    padding-bottom: 450px;
+}
+
+.current {
+	text-shadow: 0px 0px 10px #2b7cff, 0px 0px 2px #2b7cff;
+}
+
+.currentBlack{
+	text-shadow: 0px 0px 5px #2b7cff, 0px 0px 5px #2b7cff;
+}
+
+/* Change the font size of your name under here */
+.title {
+	font-size:580%;
+}
+
+.title {
+	color: #2b7cff;
+}
+
+/* this is most of the layout for the top of the home page under here */
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../img/background.jpg');
+	background-attachment: fixed;
+	font: normal 100%/1.4 sans-serif;
+}
+
+#bio-card p{
+	color:white;
+}
+
+#follow {
+	color:white;
+	margin-top: 10px;
+	margin-bottom:5px;
+}
+
+.wrapper {
+	z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: inherit;
+    top: 0px;
+    left: 0px;
+}
+
+.wrapper {
+	z-index: 2;
+	max-width: 1270px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 30px black;
+	border-radius: 20px;
+}
+
+/* MASTHEAD */
+div.icon-placeholder:before {
+	content:url(../img/rose-loop-100x100.gif);
+}
+
+header{
+	box-shadow: 0px 0px 10px black;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background-color: white;
+}
+
+#logo{
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: -20px;
+}
+
+div.icon-placeholder{
+	display:inline-block;
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.miles{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.rose{
+	margin-left: 0px;
+}
+
+.currentBlack{
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 20px black;
+	border-radius: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+ul {
+	padding: 0;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.title {
+	margin-bottom: -40px;
+
+
+	letter-spacing: .45rem;
+	display: inline-block;
+}
+
+#portfolio{
+	font-size: 2.5rem;
+}
+
+/* NAVIGATION */
+
+nav li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+nav {
+ text-align: center;
+ font-family: 'Nova Square', sans-serif;
+}
+
+.nav-top{
+	font-size:2.1rem;
+	margin-bottom: 0;
+}
+
+.nav-top li{
+	padding-left:  13px; /* Change these values to adject how far apart the nav links will be from eachother */
+	padding-right: 20px; /* Change these values to adject how far apart the nav links will be from eachother */
+	padding-top: 0;
+}
+.portfolio-nav{
+	font-size: 2rem;
+}
+
+.subnav {
+	font-size: 1.5rem;
+	margin-top: 0px;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.subnav a{
+	color: white;
+}
+
+.subnav li {
+	padding-left:  5.5px;
+	padding-right: 5.5px;
+	margin-top: 5px;
+}
+
+hr{
+	margin: 0;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.media-section{
+		box-shadow: 0px 0px 10px black;
+		padding-top:50px;
+		padding-bottom: 20px;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		background-color: white;
+	}
+
+/*blog articles*/
+
+.article-title{
+	font-size: 1.5rem;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+	max-width: 650px;
+}
+
+.allPosts{
+	margin-bottom: -20px;
+}
+
+.article-title{
+	color: white;
+}
+
+.article-list{
+	max-width: 1270PX;
+	margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    font-family: sans-serif;
+    padding:10px;
+}
+
+#feed-button p{
+	margin-top: 20px;
+}
+
+#feed-button{
+	color:white;
+
+}
+
+article img {
+	width: 100%;
+	max-width:1000px;
+	height:auto;
+	margin-bottom: 60px;
+}
+
+#disqus_thread {
+	max-width: 1270px;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+/*common*/
+
+a {
+	text-decoration: none;
+	color:black;
+}
+
+.redlink {
+	color: white;
+	text-decoration: underline;
+}
+
+.centerText, #copy {
+	text-align: center;
+	margin-top: -5px;
+}
+
+#copy{
+	color:white;
+}
+
+#headshot{
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 10px;
+}
+
+#bio{
+	max-width: 270px;
+	margin-top: 0px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+#bio-card{
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#bio-card p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#bio-card h2{
+	color:white;
+}
+
+.home-bio{
+	margin-bottom: -45px;
+}
+
+#circle-shape-example p { 
+  line-height: 2; 
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#circle-shape-example .curve { 
+
+  min-width: 100px;
+  float: left;
+  margin-right:.5rem; 
+
+  border-radius: 50%;
+  -webkit-shape-outside: circle();
+
+}
+
+h1 {
+	font-family: 'Nova Square', sans-serif;
+	font-size: 2.5rem;
+}
+
+.img {
+	height: 300px;
+}
+
+#top-0 {
+	margin-top: 0;
+}
+
+#image-view {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*video gallery*/
+
+#videos{
+	display: block;
+	max-width: 1270px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#videos img{
+	width:250px;
+}
+
+.containingBlock {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#videos h2{
+	display:none;
+}
+
+.inline-link {
+	color: blue;
+	text-decoration: underline;
+}
+
+/*article text formatting*/
+
+article p{
+	text-align: left;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article a{
+	text-decoration: underline;
+	color: blue;
+}
+
+h3 {
+	display: inline;
+}
+
+/*3d viewer settings*/
+
+#viewer-3d{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1165px;
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+		#viewer-3d{
+			max-width: 583px;
+		}
+	}
+
+@media (max-width: 735px){
+
+	.allPosts{
+		margin-top: -60px;
+	}
+
+	div.icon-placeholder:before {
+	content:url(../img/rose-loop-50x50.gif);
+	margin-left: -40px;
+	margin-right: -40px;
+	}
+
+	#feed-button{
+	margin-top: 10px;
+	}
+
+	.media-section {
+		margin-top: 30px;
+		margin-left: -10px;
+		margin-right: 10px;
+	}
+
+	.nav-top{
+		font-size:1.22rem;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.subnav {
+		font-size: .8rem;
+		margin-bottom: -10px;
+	}
+
+	.subnav li{
+		padding: 0;
+	}
+
+	.nav-top li{
+		padding-left:  5px;
+		padding-right: 5px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.centerText {
+		margin-bottom: 15px;
+		margin-top: -15px;
+		text-align: center;
+		width: 100%;
+
+	}
+
+	#headshot {
+		width: 100px;
+	}
+
+	hr {
+		max-width: 1270px
+	}
+
+	.title {
+		font-size: 1.8rem;
+		letter-spacing: .3rem;
+		margin-bottom: 0;
+		margin-left: 2px;
+		display: inline;
+	}
+
+	#logo{
+		margin-bottom: -10px;
+	}
+
+	h1{
+		font-size: 3rem;
+	}
+
+	.article-title {
+		font-size: 1.5rem;
+	}
+
+	.article-list{
+		max-width: 100%;
+		margin-top:40px;
+	}
+
+	#videos {
+		max-width:405px;
+	}
+
+	#viewer-3d img{
+		width: 300px;
+		height: 169px;
+	}
+
+	#viewer-3d{
+		max-width: 310px
+	}
+}
+
+@media (max-width: 1300px){ /*narrows the video grid*/
+	#videos {
+		max-width:1015px;
+	}
+}
+
+@media (max-width: 1050px){
+	#videos{
+		max-width: 760px;
+	}
+}
+
+@media (max-width: 735px){
+	#videos img{
+		width: 170px;
+	}
+	#videos{
+		width:345px;
+	}
+
+}
+
+@media (max-width: 795px){
+	#videos{
+		max-width:505px;
+	}
+}
