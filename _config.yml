@@ -1,0 +1,4 @@
+exclude: ['README.md']
+permalink: pretty
+name: Jekyll Blog and Portfolio
+description: a jekyll theme
